@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tela de Solicitação de Senha</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .btn {
+         width: 100%;
+      }
+      .card {
+        margin: 5px;
+      }
+    </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br>
+  
+  <!-- Fila de Atendimento -->
+  <div class="container text-center">  
+    <h1> Fila de Atendimento - Realizados</h1>
+    
+    <!-- Accordion para as seções de atendimento -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      
+      <!-- ATENDIMENTO PRIORITÁRIO -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            ATENDIMENTO PRIORITÁRIO
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="row">
+              <!-- Card 1 - Atendimento Prioritário -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Vinicius Marvila
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">605</h5>
+                    <p class="card-text">Atendimento energia elétrica</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    15min <a href="#maisinformacao-605" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-605">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-605">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 605: Cliente relatou problemas frequentes com o fornecimento de energia, causando instabilidade em eletrodomésticos.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 - Atendimento Prioritário -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Julia Pereira
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">606</h5>
+                    <p class="card-text">Atendimento de internet</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    10min <a href="#maisinformacao-606" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-606">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-606">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 606: Cliente com problemas de conexão devido a roteador mal configurado.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 - Atendimento Prioritário -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Carlos Silva
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">607</h5>
+                    <p class="card-text">Manutenção no sistema de segurança</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    20min <a href="#maisinformacao-607" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-607">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-607">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 607: Sistema de segurança falhando, atualização de software realizada com sucesso.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ATENDIMENTO NORMAL -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            ATENDIMENTO NORMAL
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="row">
+              <!-- Card 1 - Atendimento Normal -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Fernanda Almeida
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">701</h5>
+                    <p class="card-text">Configuração de email corporativo</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    25min <a href="#maisinformacao-701" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-701">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-701">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 701: Configuração completa, teste de envio e recebimento realizados com sucesso.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 - Atendimento Normal -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Bruno Teixeira
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">702</h5>
+                    <p class="card-text">Configuração de backup automático</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    30min <a href="#maisinformacao-702" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-702">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-702">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 702: Sistema de backup em nuvem configurado com horários diários de sincronização.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 - Atendimento Normal -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Alice Rodrigues
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">703</h5>
+                    <p class="card-text">Reparo de impressora</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    15min <a href="#maisinformacao-703" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-703">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-703">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 703: Impressora com erro de alinhamento resolvido após limpeza interna e atualização de drivers.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ATENDIMENTO EXTRA CLASSE -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            ATENDIMENTO EXTRA CLASSE
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="row">
+              <!-- Card 1 - Atendimento Extra Classe -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Vinicius Marvila
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">801</h5>
+                    <p class="card-text">Suporte em evento corporativo</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    2h <a href="#maisinformacao-801" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-801">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-801">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 801: Configuração de equipamentos de projeção e áudio para evento corporativo realizado em tempo recorde.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 - Atendimento Extra Classe -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Maria Cecilia
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">802</h5>
+                    <p class="card-text">Apoio em feira de tecnologia</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    3h <a href="#maisinformacao-802" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-802">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-802">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 802: Assistência técnica para instalação de estandes e suporte de TI durante o evento.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 - Atendimento Extra Classe -->
+              <div class="col-md-4">
+                <div class="card text-center">
+                  <div class="card-header">
+                    Nicolas Marvila
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">803</h5>
+                    <p class="card-text">Manutenção de computadores em plantão</p>
+                    <div class="row">
+                      <div class="col"><a href="#" class="btn btn-primary">Rechamar</a></div>
+                      <div class="col"><a data-bs-toggle="modal" data-bs-target="#modalexclusao" class="btn btn-danger">Excluir</a></div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-body-secondary">
+                    1h <a href="#maisinformacao-803" class="btn btn-warning" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="maisinformacao-803">+Info</a>
+                  </div>
+                  <div class="collapse" id="maisinformacao-803">
+                    <div class="card card-body">
+                      Mais detalhes sobre o atendimento 803: Verificação de hardware e instalação de sistemas em tempo de plantão noturno.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
